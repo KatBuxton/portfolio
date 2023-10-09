@@ -1,24 +1,7 @@
-
 import {Header} from "./components/header";
-import {Projects} from "./components/projects";
 import {Hello} from "./components/hello";
+import {ProjectsSection} from "./components/projectsSection";
 
-
-
-
-//
-// const tools = [
-//     {   className: "col-span-2 max-h-12 w-full object-contain lg:col-span-1",
-//         src: "https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg",
-//         alt: "Tuple",
-//         width: 158,
-//         height: 48},
-//     {   className: "col-span-2 max-h-12 w-full object-contain lg:col-span-1",
-//         src: "https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg",
-//         alt: "Tuple",
-//         width: 158,
-//         height: 48},
-// ]
 function App() {
 
   return (
@@ -37,7 +20,7 @@ function App() {
               {/*            My stack*/}
               {/*        </h2>*/}
               {/*        <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">*/}
-              {/*            Technologies, skills and tools I have used in my projects.*/}
+              {/*            Technologies, skills and tools I have used in my components.projectsSection.*/}
               {/*        </p>*/}
               {/*        <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-5">*/}
               {/*            <img*/}
@@ -88,9 +71,9 @@ function App() {
               {/*    </div>*/}
               {/*</div>*/}
 
-              {/* Projects section */}
+              {/* ProjectsSection section */}
 
-              <Projects />
+              <ProjectsSection />
 
           </main>
 
