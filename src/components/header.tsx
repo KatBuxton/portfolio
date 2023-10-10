@@ -1,15 +1,33 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 import {Dialog} from "@headlessui/react";
+interface HeaderLink {
+    name: string;
+    href: string;
+}
 
-const header = [
-    { name: 'About Me', href: '#' },
-    { name: 'Projects', href: '#' },
-    { name: 'Contact', href: '#' },
+const header: HeaderLink[] = [
+    { name: 'About Me', href: '#about' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
 ]
 
+const smoothScroll = (targetId: string) => {
+    const target = document.querySelector(targetId);
+    if (target) {
+        target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        });
+    }
+};
 export const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        smoothScroll(href);
+        setMobileMenuOpen(false); // Close the mobile menu
+    };
 
     return(
         <header className="absolute inset-x-0 top-0 z-50">
@@ -36,7 +54,11 @@ export const Header = () => {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {header.map((item) => (
-                        <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+                        <a
+                            key={item.name}
+                            href={item.href}
+                            onClick={(e) => handleSmoothScroll(e, item.href)}
+                            className="text-sm font-semibold leading-6 text-gray-900">
                             {item.name}
                         </a>
                     ))}

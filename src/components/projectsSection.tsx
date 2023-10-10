@@ -21,7 +21,8 @@ export interface Project {
 
 export const ProjectsSection = () => {
     return (
-        <div className="mx-auto mt-4 max-w-7xl sm:px-6 lg:px-8">
+        <div id="projects"
+            className="mx-auto mt-4 max-w-7xl sm:px-6 lg:px-8">
             <div
                 className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
