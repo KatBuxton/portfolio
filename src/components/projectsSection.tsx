@@ -1,4 +1,5 @@
 import projects from "../projects";
+import {Link} from "react-router-dom";
 
 export interface Project {
     id: number;
@@ -34,11 +35,14 @@ export const ProjectsSection = () => {
                     </div>
                     <div
                         className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        {projects.map((post: Project) => (
-                            <article key={post.id} className="flex flex-col items-start">
+                        {projects.map((project: Project) => (
+                            <article
+                                key={project.id}
+                                className="flex flex-col items-start">
+                                <Link to={`/project/${project.id}`}>
                                 <div className="relative w-full">
                                     <img
-                                        src={post.imageUrl}
+                                        src={project.imageUrl}
                                         alt=""
                                         className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
                                     />
@@ -47,14 +51,15 @@ export const ProjectsSection = () => {
                                 <div className="max-w-xl">
                                     <div className="flex flex-col group relative justify-between">
                                         <h3 className="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                            <a href={post.href}>
+                                            <a href={project.href}>
                                                 <span className="absolute inset-0"/>
-                                                {post.title}
+                                                {project.title}
                                             </a>
                                         </h3>
-                                        <p className="mt-5 line-clamp-6 text-sm leading-6 text-gray-300">{post.blurb}</p>
+                                        <p className="mt-5 line-clamp-6 text-sm leading-6 text-gray-300">{project.blurb}</p>
                                     </div>
                                 </div>
+                                </Link>
                             </article>
                         ))}
                     </div>
