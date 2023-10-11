@@ -76,6 +76,7 @@ const projects = [
     "libraries": "Email.js, Context",
     "what_i_learned": "I worked on this project mostly independently, which taught me to use online resources effectively and find alternative solutions. It was also my first project using Context for state management.",
     "features": "Filtering by product category, Add to cart, Place an order",
+    repo: "https://github.com/KatBuxton/prirodni-kosmetika",
     imageUrl:"https://user-images.githubusercontent.com/101291722/273207000-631d6bca-1c38-4b91-8559-46aa87413e4c.jpg",
     webUrl: "https://sabinky-obchod.netlify.app/"
   },
@@ -93,6 +94,7 @@ const projects = [
     "libraries": "Tailwind CSS",
     "what_i_learned": "I learned the importance of image optimization and using responsive images for performance and accessibility. This project also allowed me to apply my knowledge of front-end development to solve real-life challenges.",
     "features": "Recipe display, Meal planning, Ingredient shopping list",
+    repo:"https://github.com/KatBuxton/standardised-meal-plan",
     imageUrl:"https://github.com/KatBuxton/portfolio/assets/101291722/bd2ba479-d5c3-47d2-9386-640daa57b51c",
     webUrl: "https://standardised-meal-plan.netlify.app/",
   },
