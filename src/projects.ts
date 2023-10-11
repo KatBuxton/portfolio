@@ -13,6 +13,7 @@ const projects = [
     "what_i_learned": "This project has been the most enriching experience for me. It's my first time working with a large team of analytics, UX designers, and engineers. I've also learned to work with shared components and handle complex forms using React Hook Form.",
     "features": "Benefits application forms, Data handling, Form validation",
     imageUrl: "https://github.com/KatBuxton/portfolio/assets/101291722/c550cac2-667a-4e96-8bf5-8db5dc60f32b",
+    "webUrl": "https://jenda.mpsv.cz/",
   },
   {
     "id": 2,
@@ -29,6 +30,7 @@ const projects = [
     "case_study": "https://www.canva.com/design/DAFDZTDKWKM/m9AnoXdW4gfAEw-pdGOidA/view?utm_content=DAFDZTDKWKM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     "repo": "https://github.com/KatBuxton/Babyfriendly",
     imageUrl:"https://user-images.githubusercontent.com/101291722/173179935-6d8ebfd4-ff95-4ec8-b6c6-3eae1b67faac.png",
+    webUrl: "www.baby-friendly.cz"
   },
   {
     "id": 3,
@@ -63,7 +65,7 @@ const projects = [
   },
   {
     "id": 5,
-    "title": "Prirodni kosmetika",
+    "title": "Natural cosmetics shop",
     blurb: 'This website is a minimalistic e-shop for promoting natural cosmetic products which are hand-made by my sister Sabina. The website is fully responsive and anyone can browse the products, add them to cart and place an order.',
     "short_description": "An e-shop with natural cosmetic products.",
     "long_description": "Prirodni kosmetika is a minimalistic e-shop for promoting natural cosmetic products handmade by my sister Sabina. Users can browse products, add them to the cart, and place orders. Although not fully finished, with some SEO and social media marketing, this business could be discovered by its first customers.",
@@ -75,6 +77,7 @@ const projects = [
     "what_i_learned": "I worked on this project mostly independently, which taught me to use online resources effectively and find alternative solutions. It was also my first project using Context for state management.",
     "features": "Filtering by product category, Add to cart, Place an order",
     imageUrl:"https://user-images.githubusercontent.com/101291722/273207000-631d6bca-1c38-4b91-8559-46aa87413e4c.jpg",
+    webUrl: "https://sabinky-obchod.netlify.app/"
   },
 
   {
@@ -91,6 +94,7 @@ const projects = [
     "what_i_learned": "I learned the importance of image optimization and using responsive images for performance and accessibility. This project also allowed me to apply my knowledge of front-end development to solve real-life challenges.",
     "features": "Recipe display, Meal planning, Ingredient shopping list",
     imageUrl:"https://github.com/KatBuxton/portfolio/assets/101291722/bd2ba479-d5c3-47d2-9386-640daa57b51c",
+    webUrl: "https://standardised-meal-plan.netlify.app/",
   },
 
 ];

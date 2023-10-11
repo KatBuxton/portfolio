@@ -18,6 +18,7 @@ export interface Project {
     imageUrl?: string;
     href?: string;
     blurb?: string;
+    webUrl?: string;
 }
 
 export const ProjectsSection = () => {
@@ -35,7 +36,7 @@ export const ProjectsSection = () => {
                     </div>
                     <div
                         className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        {projects.map((project: Project) => (
+                        {projects.map((project) => (
                             <article
                                 key={project.id}
                                 className="flex flex-col items-start">
@@ -51,10 +52,8 @@ export const ProjectsSection = () => {
                                 <div className="max-w-xl">
                                     <div className="flex flex-col group relative justify-between">
                                         <h3 className="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-600">
-                                            <a href={project.href}>
                                                 <span className="absolute inset-0"/>
                                                 {project.title}
-                                            </a>
                                         </h3>
                                         <p className="mt-5 line-clamp-6 text-sm leading-6 text-gray-300">{project.blurb}</p>
                                     </div>
