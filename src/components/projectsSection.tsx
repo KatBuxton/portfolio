@@ -1,7 +1,7 @@
 import projects from "../projects";
 import {Link} from "react-router-dom";
 import {useState} from "react";
-import {Spinner} from "./UI/Spinner";
+import {Spinner} from "./UI/spinner";
 
 export interface Project {
     id: number;

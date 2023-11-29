@@ -3,6 +3,7 @@ import projects from "../projects";
 import {CursorArrowRaysIcon} from "@heroicons/react/20/solid";
 import {AiFillGithub} from "react-icons/ai"
 import {useEffect} from "react";
+import {Logo} from "./UI/logo";
 
 const ProjectDetailPage = () => {
     const { projectId } = useParams();
@@ -37,8 +38,11 @@ const ProjectDetailPage = () => {
     };
 
     return (
-        <div className="bg-gray-900 relative isolate px-6 py-16 lg:px-8">
-            <div className="mx-auto max-w-3xl text-base leading-7 text-gray-300">
+        <div className="bg-gray-900 relative isolate px-6 pb-16 lg:px-8">
+            <div className="flex lg:flex-1 pt-6">
+                <Logo />
+            </div>
+            <div className="mx-auto max-w-3xl mt-8 text-base leading-7 text-gray-300">
                 <p className="text-base font-semibold leading-7 text-indigo-600">{project.duration}</p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">{project.title}</h1>
                 <p className="mt-6 text-xl leading-8">
@@ -89,7 +93,7 @@ const ProjectDetailPage = () => {
                     )}
                 </div>
                 <Link to="/#projects">
-                    <p className="mt-6 mx-auto hover:text-indigo-500">Back to all projects</p>
+                    <p className="mt-6 mx-auto hover:text-indigo-500 focus:text-indigo-500">Back to all projects</p>
                 </Link>
                 <div className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl" aria-hidden="true">
                     <div

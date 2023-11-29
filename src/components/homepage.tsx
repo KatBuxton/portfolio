@@ -7,12 +7,12 @@ import {Footer} from "./footer";
 export const Homepage = () => {
     return(
         <div className="bg-white">
-        <Header/>
+            <Header/>
             <main className="isolate">
-            <AboutSection id="about"/>
-            <ProjectsSection id="projects"/>
-            <ContactSection id="contact" />
-                <Footer />
+                <AboutSection id="about"/>
+                <ProjectsSection id="projects"/>
+                <ContactSection id="contact"/>
+                <Footer/>
             </main>
         </div>
     )

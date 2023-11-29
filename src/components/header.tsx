@@ -39,7 +39,7 @@ export const Header = () => {
                 <div className="flex lg:hidden">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -59,7 +59,6 @@ export const Header = () => {
                         </Link>
                     ))}
                 </div>
-
             </nav>
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
                 <div className="fixed inset-0 z-50" />
