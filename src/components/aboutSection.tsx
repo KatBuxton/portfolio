@@ -28,9 +28,9 @@ export const AboutSection = ({id}: AboutProps) => {
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                         <p className="text-lg leading-8 text-gray-600">
-                            I am a <strong>front-end developer</strong> with a passion for crafting seamless digital
+                            I am a <strong>front-end developer</strong> with a passion for optimising digital
                             experiences. My journey in the world of technology began in e-commerce and online marketing,
-                            where I honed my skills and gained valuable insights into the digital landscape.
+                            where I gained valuable insights into the digital landscape. Through running and analysing hundreds of A/B tests, I have developed an excellent sense for identifying opportunities for improvement (both user experience and sales performance).
                         </p>
                         <br/>
                         {isReadMoreVisible ? (
@@ -46,8 +46,7 @@ export const AboutSection = ({id}: AboutProps) => {
                                 </p>
                                 <br/>
                                 <p className="text-m leading-8 text-gray-600">
-                                    Beyond my development skills, I have a deep interest in web accessibility and A/B
-                                    testing. Ensuring websites are inclusive and user-friendly for all is a priority for
+                                    Beyond my development skills, I have a deep interest in web accessibility and both qualitative and quantitative research. Ensuring websites are inclusive and user-friendly for all is a priority for
                                     me. Experience in A/B testing allows me to refine and optimize digital experiences,
                                     ensuring they meet and exceed user expectations.
                                 </p>
