@@ -10,9 +10,9 @@ export const ContactSection = ({id}: ContactProps) => {
     return (
         <div
             id={id}
-            className="mx-auto mt-4 py-24 max-w-7xl px-6 lg:px-8">
+            className="mx-auto mt-4 py-16 max-w-7xl px-6 lg:px-8">
             <h2 className="text-3xl text-center font-bold tracking-tight sm:text-4xl text-gray-900">
-                Get in touch
+                Get in touch 🍻
             </h2>
             {/*<p className="mt-6 text-lg leading-8 text-gray-600">*/}
             {/*    Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos totam in dolorum. Nemo vel facere*/}

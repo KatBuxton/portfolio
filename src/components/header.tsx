@@ -26,7 +26,6 @@ export const Header = () => {
     const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
         smoothScroll(href);
-        setMobileMenuOpen(false); // Close the mobile menu
     };
 
     return(
@@ -57,7 +56,10 @@ export const Header = () => {
                         <a
                             key={item.name}
                             href={item.href}
-                            onClick={(e) => handleSmoothScroll(e, item.href)}
+                            onClick={(e) => {
+                                handleSmoothScroll(e, item.href);
+                                setMobileMenuOpen(false);
+                            }}
                             className="text-sm font-semibold leading-6 text-gray-900">
                             {item.name}
                         </a>
