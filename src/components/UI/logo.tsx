@@ -6,7 +6,7 @@ export const Logo = () => {
             <span className="sr-only">Kat Buxton</span>
             <img
                 className="h-10 w-auto "
-                src="public/KB-logo.svg"
+                src="https://github.com/KatBuxton/portfolio/assets/101291722/74ebca88-db5a-4e8a-b7f6-1c23924fcfba"
                 alt="KB logo"
             />
         </Link>
