@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import projects from "../projects";
 import {CursorArrowRaysIcon} from "@heroicons/react/20/solid";
 import {AiFillGithub} from "react-icons/ai"
+import {useEffect} from "react";
 
 const ProjectDetailPage = () => {
     const { projectId } = useParams();
@@ -13,6 +14,10 @@ const ProjectDetailPage = () => {
         // Handle the case when the project doesn't exist
         return <div>Project not found</div>;
     }
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    },[]);
 
     const renderLabels = (label, items) => {
         const itemsArray = items.split(', ');

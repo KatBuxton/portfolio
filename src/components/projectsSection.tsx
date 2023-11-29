@@ -1,5 +1,7 @@
 import projects from "../projects";
 import {Link} from "react-router-dom";
+import {useState} from "react";
+import {Spinner} from "./UI/Spinner";
 
 export interface Project {
     id: number;
@@ -21,9 +23,20 @@ export interface Project {
     webUrl?: string;
 }
 
-export const ProjectsSection = () => {
+interface ProjectsProps {
+    id: string;
+}
+
+export const ProjectsSection = ({id}: ProjectsProps) => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    const handleImageLoad = () => {
+        setIsLoading(false);
+        console.log("image loaded")
+    };
+
     return (
-        <div id="projects"
+        <div id={id}
             className="mx-auto mt-4 max-w-7xl sm:px-6 lg:px-8">
             <div
                 className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
@@ -42,10 +55,16 @@ export const ProjectsSection = () => {
                                 className="flex flex-col items-start">
                                 <Link to={`/project/${project.id}`}>
                                 <div className="relative w-full">
+                                    {isLoading && (
+                                        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 rounded-2xl">
+                                            <Spinner />
+                                        </div>
+                                    )}
                                     <img
                                         src={project.imageUrl}
                                         alt=""
-                                        className="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                                        className="aspect-[16/9] w-full rounded-2xl bg-gray-900 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+                                        onLoad={handleImageLoad}
                                     />
                                     <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"/>
                                 </div>

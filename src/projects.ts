@@ -30,7 +30,7 @@ const projects = [
     "case_study": "https://www.canva.com/design/DAFDZTDKWKM/m9AnoXdW4gfAEw-pdGOidA/view?utm_content=DAFDZTDKWKM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     "repo": "https://github.com/KatBuxton/Babyfriendly",
     imageUrl:"https://user-images.githubusercontent.com/101291722/173179935-6d8ebfd4-ff95-4ec8-b6c6-3eae1b67faac.png",
-    webUrl: "www.baby-friendly.cz"
+    webUrl: "https://www.baby-friendly.cz"
   },
   {
     "id": 3,
@@ -84,15 +84,15 @@ const projects = [
   {
     "id": 6,
     "title": "Standardised meal plan",
-    "blurb": "A recipe and ingredient shopping app for a standardized meal system.",
-    "short_description": "A recipe and ingredient shopping app for a standardized meal system.",
-    "long_description": "The Standardised Meal Plan app is designed to simplify meal planning and grocery shopping by implementing a standardized meal system. It offers nutritious, easy-to-make meals with mild variations based on ingredient availability, reducing supermarket spending and kitchen time.",
+    "blurb": "A recipe and ingredient shopping app for a standardised meal system.",
+    "short_description": "A recipe and ingredient shopping app for a standardised meal system.",
+    "long_description": "This app is designed to simplify meal planning and grocery shopping by implementing a standardised meal system. It offers nutritious, easy-to-make meals with mild variations based on ingredient availability, reducing supermarket spending and kitchen time.",
     "my_role": "UX designer, Front-end developer",
     "duration": "April 2023 - May 2023",
     "tools": "IntelliJ IDEA, Github, Figma",
     "technologies": "React.js, Typescript, JavaScript, CSS",
     "libraries": "Tailwind CSS",
-    "what_i_learned": "I learned the importance of image optimization and using responsive images for performance and accessibility. This project also allowed me to apply my knowledge of front-end development to solve real-life challenges.",
+    "what_i_learned": "I learned the importance of image optimiastion and using responsive images for performance and accessibility. This project also allowed me to apply my knowledge of front-end development to solve real-life challenges. Although still in progress, this app is already used in our household every day, saving us some valuable time and mental capacity.",
     "features": "Recipe display, Meal planning, Ingredient shopping list",
     repo:"https://github.com/KatBuxton/standardised-meal-plan",
     imageUrl:"https://github.com/KatBuxton/portfolio/assets/101291722/bd2ba479-d5c3-47d2-9386-640daa57b51c",
