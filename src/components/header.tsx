@@ -36,9 +36,9 @@ export const Header = () => {
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Kat Buxton</span>
                         <img
-                            className="h-10 w-auto"
-                            src="src/assets/KB-logo-large.png"
-                            alt=""
+                            className="h-10 w-auto text-indigo-600"
+                            src="src/assets/KB-logo.svg"
+                            alt="KB logo"
                         />
                     </a>
                 </div>
@@ -74,9 +74,9 @@ export const Header = () => {
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Kat Buxton</span>
                             <img
-                                className="h-10 w-auto"
-                                src="src/assets/KB-logo-large.png"
-                                alt=""
+                                className="h-10 w-auto "
+                                src="src/assets/KB-logo.svg"
+                                alt="KB logo"
                             />
                         </a>
                         <button
