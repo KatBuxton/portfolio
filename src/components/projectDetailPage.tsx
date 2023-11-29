@@ -7,11 +7,9 @@ import {useEffect} from "react";
 const ProjectDetailPage = () => {
     const { projectId } = useParams();
 
-    // Find the project based on the projectId
-    const project = projects.find((p) => p.id === parseInt(projectId, 10));
+    const project =projectId && projects.find((p) => p.id === parseInt(projectId, 10));
 
     if (!project) {
-        // Handle the case when the project doesn't exist
         return <div>Project not found</div>;
     }
 
@@ -19,7 +17,7 @@ const ProjectDetailPage = () => {
         window.scrollTo(0,0);
     },[]);
 
-    const renderLabels = (label, items) => {
+    const renderLabels = (items: string) => {
         const itemsArray = items.split(', ');
 
         return (
@@ -59,9 +57,9 @@ const ProjectDetailPage = () => {
                 <div className="mt-10 max-w-2xl">
                     <strong className="font-bold text-2xl tracking-tight text-gray-200">Tools, technologies,
                         libraries </strong>
-                    {renderLabels('Tools', project.tools)}
-                    {renderLabels('Technologies', project.technologies)}
-                    {renderLabels('Libraries', project.libraries)}
+                    {renderLabels(project.tools)}
+                    {renderLabels(project.technologies)}
+                    {renderLabels(project.libraries)}
                 <h2 className="mt-8 text-2xl font-bold tracking-tight text-gray-200">What I learned</h2>
                     <p className="mt-6">
                         {project.what_i_learned}
