@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 import {Dialog} from "@headlessui/react";
+import {Link} from "react-router-dom";
 interface HeaderLink {
     name: string;
     href: string;
@@ -53,16 +54,15 @@ export const Header = () => {
                 </div>
                 <div className="hidden lg:flex lg:gap-x-12">
                     {header.map((item) => (
-                        <a
+                        <Link
                             key={item.name}
-                            href={item.href}
+                            to={item.href}
                             onClick={(e) => {
                                 handleSmoothScroll(e, item.href);
-                                setMobileMenuOpen(false);
                             }}
                             className="text-sm font-semibold leading-6 text-gray-900">
                             {item.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
 
@@ -92,13 +92,17 @@ export const Header = () => {
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
                                 {header.map((item) => (
-                                    <a
+                                    <Link
                                         key={item.name}
-                                        href={item.href}
+                                        to={item.href}
+                                        onClick={(e) => {
+                                            handleSmoothScroll(e, item.href);
+                                            setMobileMenuOpen(false)
+                                        }}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
