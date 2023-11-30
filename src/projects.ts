@@ -2,7 +2,7 @@ const projects = [
   {
     "id": 1,
     "title": "Jenda @OKsystem",
-    "blurb": "An app for digitalizing benefit applications for the Czech Ministry of Labour and Social Affairs.",
+    "blurb": "An app for digitising benefit applications for the Czech Ministry of Labour and Social Affairs.",
     "short_description": "An app for digitalizing benefit applications for the Czech Ministry of Labour and Social Affairs.",
     "long_description": "Jenda enables citizens to apply for various benefits from their homes, saving them time and effort. Working on this project has been enriching, allowing me to collaborate with a large team and deal with complex data and forms.",
     "my_role": "Front-end developer",
@@ -18,7 +18,7 @@ const projects = [
   {
     "id": 2,
     "title": "Baby-friendly.cz",
-    blurb: " This is my first web, it was created as a final project for Czechitas Digital Academy. Of course it's far from perfect but I am proud of being able to present a working, scalable, monetizable product only few months after writing my first line of code.",
+    blurb: " This is my first web app, it was created as a final project for Czechitas Digital Academy. Of course, it's far from perfect, but I am proud of being able to present a working, scalable, monetizable product only a few months after writing my first line of code.",
     "short_description": "Map of baby-friendly places in Prague & Czech Republic.",
     "long_description": "Baby-friendly.cz is a web application designed to help parents find baby-friendly places in Prague and the Czech Republic. It allows users to search for places, filter by type, and provides information on baby facilities. The project was created as a final project for Czechitas Digital Academy, marking my entry into the world of web development.",
     "my_role": "Creator, UX designer, Developer",
@@ -36,7 +36,7 @@ const projects = [
     "id": 3,
     "title": "Wake on LAN @OKsystem",
     blurb:
-        'My first project as a frontend developer at OKsystem. This app is intended for internal purposes, a logged-in user can add, edit and delete his computers and send a magic packet that wakes his computer up. ',
+        'My first project as a front-end developer at OKsystem. This app is intended for internal purposes; a logged-in user can add, edit and delete his computers and send a magic packet that wakes his computer up.',
     "short_description": "An app for waking up your computer remotely.",
     "long_description": "Wake on LAN @OKsystem is my first project as a frontend developer at OKsystem. It allows logged-in users to add, edit, and delete their computers and send a magic packet to wake up their computer remotely.",
     "my_role": "UX designer, Front-end developer",
@@ -66,7 +66,7 @@ const projects = [
   {
     "id": 5,
     "title": "Natural cosmetics shop",
-    blurb: 'This website is a minimalistic e-shop for promoting natural cosmetic products which are hand-made by my sister Sabina. The website is fully responsive and anyone can browse the products, add them to cart and place an order.',
+    blurb: 'This website is a minimalistic e-shop for promoting natural cosmetic products which are hand-made by my sister, Sabina. The website is fully responsive and anyone can browse the products, add them to cart and place an order.',
     "short_description": "An e-shop with natural cosmetic products.",
     "long_description": "Prirodni kosmetika is a minimalistic e-shop for promoting natural cosmetic products handmade by my sister Sabina. Users can browse products, add them to the cart, and place orders. Although not fully finished, with some SEO and social media marketing, this business could be discovered by its first customers.",
     "my_role": "Creator, UX designer, Developer",
