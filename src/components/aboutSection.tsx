@@ -28,7 +28,7 @@ export const AboutSection = ({id}: AboutProps) => {
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                         <p className="text-lg leading-8 text-gray-600">
-                            I am a <strong>frontend developer</strong> with a passion for optimising digital
+                            I am a <strong>front-end developer</strong> with a passion for optimising digital
                             experiences. My tech journey began in e-commerce and online marketing, where I gained valuable insights into the digital landscape. Through running and analysing hundreds of A/B tests, I have developed an excellent sense for identifying opportunities for improvement (both user experience and sales performance).
                         </p>
                         <br/>
