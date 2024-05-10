@@ -28,27 +28,18 @@ export const AboutSection = ({id}: AboutProps) => {
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                         <p className="text-lg leading-8 text-gray-600">
-                            I am a <strong>front-end developer</strong> with a passion for optimising digital
-                            experiences. My journey in the world of technology began in e-commerce and online marketing,
-                            where I gained valuable insights into the digital landscape. Through running and analysing hundreds of A/B tests, I have developed an excellent sense for identifying opportunities for improvement (both user experience and sales performance).
+                            I am a <strong>frontend developer</strong> with a passion for optimising digital
+                            experiences. My tech journey began in e-commerce and online marketing, where I gained valuable insights into the digital landscape. Through running and analysing hundreds of A/B tests, I have developed an excellent sense for identifying opportunities for improvement (both user experience and sales performance).
                         </p>
                         <br/>
                         {isReadMoreVisible ? (
                             <>
                                 <p className="text-m leading-8 text-gray-600">
-                                    In 2021, I took a significant leap outside my comfort zone to specialize in the
-                                    areas that truly captivate me: UX and front-end development. I possess a relentless
-                                    appetite for learning, regardless of the industry. I'm adaptable, dependable, and a
-                                    quick study. My journey into front-end development was originally fueled by a
-                                    personal project—an idea for a website with map of baby-friendly places. This drive
-                                    led me to enroll in a rigorous three-month course, marking my entry into the world
-                                    of IT.
+                                    In 2021, I took a significant leap outside my comfort zone to specialise in the areas that truly captivate me: UX and frontend development. I possess a relentless appetite for learning, regardless of the industry. I'm adaptable, dependable, and a quick student. My voyage into frontend development was originally fueled by a personal project—an idea for a website mapping baby-friendly places. This drive led me to enrol in a rigorous three-month course, marking my entry into the world of IT.
                                 </p>
                                 <br/>
                                 <p className="text-m leading-8 text-gray-600">
-                                    Beyond my development skills, I have a deep interest in web accessibility and both qualitative and quantitative research. Ensuring websites are inclusive and user-friendly for all is a priority for
-                                    me. Experience in A/B testing allows me to refine and optimize digital experiences,
-                                    ensuring they meet and exceed user expectations.
+                                    Beyond my development skills, I have a deep interest in web accessibility and both qualitative and quantitative research. Ensuring websites are inclusive and user-friendly for all is a priority for me. Experience in A/B testing allows me to refine and optimise digital experiences, ensuring they meet and exceed user expectations.
                                 </p>
                                 <button
                                     type="button"
